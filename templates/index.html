@@ -1,11 +1,12 @@
 <html>
   <head>
     <title>Sumner's Awesome Phones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
-    <script src="https://fonts.googleapis.com/css?family=Open+Sans"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   </head>
   <body>
 <!-- Navigation Bar -->
@@ -22,7 +23,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarButtons">          
           <ul class="nav navbar-nav navbar-right">
-            <li id="navAbout" class="btn navbar-btn"><a href="#aboutRow" class="navbar-btn">About</a></li>
+            <li id="navAbout" class="btn"><a href="#aboutRow" class="navbar-btn">About</a></li>
             <li id="navServices" class="btn"><a href="#servicesRow" class="navbar-btn">Services</a></li>
             <li id="navContact" class="btn"><a href="#phoneContact" class="navbar-btn">Contact</a></li>
           </ul>
@@ -32,9 +33,9 @@
 <!-- Top page image -->
  <div class="parallaxTop">
    <div class="jumboBanner shadow">
-     <h1 class="banner">Company</h1>
+     <h1 class="banner">Sumner's Awesome Phones</h1>
      <h3 class="motto">World's / Finest / Phones</h3>
-     <button id="bannerBtn" class="bannerBtn">LEARN MORE</button>
+     <button id="bannerBtn" class="bannerBtn"><a href="#aboutRow" class="learn-more">LEARN MORE</a></button>
    </div>
  </div>
 <!-- Main content -->    
@@ -94,7 +95,7 @@
       <div class="container">               
         <div id="contactRow" class="contactForm row">
           <h2>CONTACT FORM</h2>
-          <hr />
+          <hr>
           <h3>Enter you contact informaiton and message below.</h3>
           <form name="contactForm" class="form-group" action="#" method="POST">
             <input id="formName" name="name" class="inputInline form-control" type="text" placeholder="Name" required />
@@ -109,13 +110,14 @@
       <div class="container">
         <div class="contactStack col-md-4">
           <h4>ADDRESS</h4>
-          <p>123 Test Avenue</p>
+          <p>Industrial Center Cir</p>
           <p>Charlotte, NC 28213</p>
         </div>
         <div class="contactStack col-md-4">
-          <h4>OPERATION HOURS</h4>
+          <h4>OPERATING HOURS</h4>
           <p>Mon-Thurs: 8:00 AM - 5:00 PM</p>
           <p>Fri-Sun: 11:00 AM - 02:00 AM</p>
+          <P>24/7 Emergency</P>
         </div>
         <div class="contactStack col-md-4">
           <h4>CONTACT INFO</h4>
@@ -128,9 +130,9 @@
     <div id="copyright" class="row">
       <div class="container">
         <div id="socialBtn">
-          <a href="#" class="social"><img id="facebook"></a>
-          <a href="#" class="social"><img id="twitter"></a>
-          <a href="#" class="social"><img id="linkedin"></a>
+          <a href="https://www.facebook.com/MyGenVox/" class="social"><img id="facebook"></a>
+          <a href="https://twitter.com/mygenvox" class="social"><img id="twitter"></a>
+          <a href="https://il.linkedin.com/company/telware-corporation" class="social"><img id="linkedin"></a>
         </div>
         <p>&copy; 2020 Sumner's Awesome Phones</p>
       </div>

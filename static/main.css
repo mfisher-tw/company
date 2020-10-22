@@ -39,7 +39,7 @@ hr {
   font-size: 18px;
 }
 .navbar-btn:hover {
-  color: #8eb640;
+  color: #8eb640 !important;
 }
 
 .navbar {
@@ -52,10 +52,18 @@ hr {
   background-color: #8eb640;
 }
 .navbar .navbar-brand {
-  height: 50px;
+  height: 75px;
 }
 .navbar .navbar-brand:hover {
-  color: #8eb640;
+  color: #8eb640 !important;
+}
+
+.learn-more {
+  color: white;
+}
+
+.learn-more:hover {
+  color: white;
 }
 
 .parallax, .parallaxTop, .parallaxSection {
