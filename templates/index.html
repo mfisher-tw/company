@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Sumner's Awesome Phones</title>
+    <link rel="stylesheet" href="../static/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src="https://fonts.googleapis.com/css?family=Open+Sans"></script>
+  </head>
+  <body>
+<!-- Navigation Bar -->
+    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <img class="navbar-brand" src="https://cdn1.iconfinder.com/data/icons/jetflat-devices-vol-5/90/0094_001_phone_call_contact_device_communication-512.png"/>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarButtons" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarButtons">          
+          <ul class="nav navbar-nav navbar-right">
+            <li id="navAbout" class="btn navbar-btn"><a href="#aboutRow" class="navbar-btn">About</a></li>
+            <li id="navServices" class="btn"><a href="#servicesRow" class="navbar-btn">Services</a></li>
+            <li id="navContact" class="btn"><a href="#phoneContact" class="navbar-btn">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Top page image -->
+ <div class="parallaxTop">
+   <div class="jumboBanner shadow">
+     <h1 class="banner">Company</h1>
+     <h3 class="motto">World's / Finest / Phones</h3>
+     <button id="bannerBtn" class="bannerBtn">LEARN MORE</button>
+   </div>
+ </div>
+<!-- Main content -->    
+<!-- About row -->
+    <div id="aboutBlock" class="container">
+      <div id="aboutRow" class="row">
+        <div class="aboutLeft col-xs-12 col-sm-6 cloak">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="aboutImg col-md-9"></div>
+          </div>
+        </div>
+        <div class="aboutRight col-xs-12 col-sm-6">
+          <div class="row">
+            <div class="col-md-9">            
+              <h2>OUR COMPANY</h2>
+              <hr>
+              <p><b>Here at Sumner's Awesome Phones</b>, we love Avaya!  We do stuff and we do things! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            </div>
+          </div>
+          <div class="col-md-3"></div>          
+        </div>
+      </div>
+    </div>
+<!--  Services row      -->
+    <div id="servicesRow" class="parallaxSection">
+      <div class="shadowSection">
+        <h2>SERVICES</h2>
+        <hr />
+      </div>
+    </div>
+    <div id="serviceBlocks" class="row">
+      <div class="container">
+        <div class="serviceBlock col-md-4">
+          <h1>Cloud</h1>
+          <img src="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Machine-learning-brain-circuit-artificial-intelligence-512.png"/>
+          <p>We do cloud stuff! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        </div>
+        <div class="serviceBlock col-md-4">
+          <h1>Software</h1>
+          <img src="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Software-disc-programming-coder-512.png"/>
+          <p>We do software things! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        </div>
+        <div class="serviceBlock col-md-4">
+          <h1>Service</h1>
+          <img src="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Simulation-man-coder-programmer-male-512.png"/>
+          <p>We do the needful! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        </div>
+      </div>
+    </div>
+<!--  Contact form      -->
+      <div id="phoneContact" class="phoneContact row">
+        <div class="container">
+          <h2>CONTACT US BY PHONE TODAY! CALL 1-555-555-5555</h2>
+        </div>
+      </div> 
+      <div class="container">               
+        <div id="contactRow" class="contactForm row">
+          <h2>CONTACT FORM</h2>
+          <hr />
+          <h3>Enter you contact informaiton and message below.</h3>
+          <form name="contactForm" class="form-group" action="#" method="POST">
+            <input id="formName" name="name" class="inputInline form-control" type="text" placeholder="Name" required />
+            <input id="formEmail" name="email" class="inputInline form-control" type="email" placeholder="Email" required />
+            <textarea id="formMessage" name="message" class="form-control" type="text" placeholder="Message" required></textarea>
+            <input name="submit" class="bannerBtn" type="submit" value="SEND MESSAGE" />
+          </form>
+        </div>        
+      </div>
+<!-- Contact info -->
+    <div id="contactInfo" class="row">
+      <div class="container">
+        <div class="contactStack col-md-4">
+          <h4>ADDRESS</h4>
+          <p>123 Test Avenue</p>
+          <p>Charlotte, NC 28213</p>
+        </div>
+        <div class="contactStack col-md-4">
+          <h4>OPERATION HOURS</h4>
+          <p>Mon-Thurs: 8:00 AM - 5:00 PM</p>
+          <p>Fri-Sun: 11:00 AM - 02:00 AM</p>
+        </div>
+        <div class="contactStack col-md-4">
+          <h4>CONTACT INFO</h4>
+          <p>Phone: 555-555-5555</p>
+          <p>Email: email@company.com</p>
+        </div>
+      </div>
+    </div>
+<!-- Copyright -->
+    <div id="copyright" class="row">
+      <div class="container">
+        <div id="socialBtn">
+          <a href="#" class="social"><img id="facebook"></a>
+          <a href="#" class="social"><img id="twitter"></a>
+          <a href="#" class="social"><img id="linkedin"></a>
+        </div>
+        <p>&copy; 2020 Sumner's Awesome Phones</p>
+      </div>
+    </div>
+  </body>
+</html>
