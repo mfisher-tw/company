@@ -6,6 +6,19 @@
         color: crimson;
         background-color: #f1f1f1;
       }
+      .note {
+        color: red;
+      }
+      .large {
+        text-transform: uppercase;
+      }
+      .highlight {
+        background: yellow;
+      }
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -29,12 +42,12 @@
 
     <h1><u>Tags</u></h1>
 
-    <h1>Title Tag</h1>
+    <h1>Title</h1>
 
     <code class="codespan">&lt;title&gt;HTML cheatsheet&lt;/title&gt;</code>
     <p>Defines the title of the document.  Shown in the browser's title bar or in the page's tab</p>
 
-    <h1>Heading Tags</h1>
+    <h1>Heading</h1>
     <code class="codespan">&lt;h1&gt;This is heading 1&lt;/h1&gt;</code>
     <br>
     <code class="codespan">&lt;h1&gt;This is heading 2&lt;/h1&gt;</code>
@@ -46,7 +59,7 @@
     <h5>This is heading 5</h5>
     <h6>This is heading 6</h6>
 
-    <h1>Paragraph Tags</h1>
+    <h1>Paragraph</h1>
     <code class="codespan">
       <pre>
       This is text with
@@ -69,22 +82,17 @@
 
     <p>This is another paragraph. It is on a new line because the browser recognizes it as a separate paragraph. Semantics matter.</p>
 
-    <h1>HTML Links</h1>
-    <p>HTML links are defined with the a tag:</p>
-
-    <code class="codespan">&lt;a&gt; href="https://www.w3schools.com">This is a link &lt;/a&gt;</code>
-
-    <p><a href="https://www.w3schools.com">This is a link</a></p>
-
-    <h1>Image Tag</h1>
+    <br>
+    
+    <h1>Image</h1>
     <p>HTML images are defined with the img tag:</p>
-    <code class="codespan">&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;</code>
-
+    <code class="codespan">&lt;img src="https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/firefox/files/2017/12/firefox-logo-300x310.png" alt="firefox-logo" width="104" height="142"&gt;</code>
+    
     <br><br>
+    
+    <img src="https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/firefox/files/2017/12/firefox-logo-300x310.png" alt="firefox-logo" height="142">
 
-    <img src="https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/firefox/files/2017/12/firefox-logo-300x310.png" alt="W3Schools.com" height="142">
-
-    <h1>Button Tag</h1>
+    <h1>Button</h1>
     <p>HTML buttons are defined with the button tag:</p>
 
     <code class="codespan">&lt;button&gt;Click me&lt;/button&gt;</code>
@@ -93,7 +101,7 @@
 
     <button>Click me</button>
 
-    <h1>List Tag</h1>
+    <h1>List</h1>
 
     <h3>An Unordered HTML List</h3>
 
@@ -131,7 +139,7 @@
       <li>Milk</li>
     </ol> 
 
-    <h1>Div (division) Tag</h1>
+    <h1>Div (division)</h1>
 
     <p>The DIV (division) element is a block element, and will always start on a
        new line and take up the full width available (stretches out to the left 
@@ -139,11 +147,11 @@
     </p>
 
 
-    <code class="codespan">&lt;div&gt;style="border: 1px solid black">Hello World&lt;/div&gt;</code>
+    <code class="codespan">&lt;div style="border: 1px solid black;text-align: center;&gt;&lt;p&gt;"Hello World&lt;/p&gt;&lt;/div&gt;</code>
 
     <br><br>
 
-    <div style="border: 1px solid black">Hello World</div>
+    <div style="border: 1px solid black;text-align: center;"><p>Hello World</p></div>
 
     <h1>HTML with inline CSS</h1>
 
@@ -171,6 +179,8 @@
 
     <h1>HTML with external stylesheet</h1>
 
+    <p>Links the CSS file using the filepath relative to the html document referencing it.</p>
+
     <code class="codespan">
     <pre>
     &lt;head&gt;
@@ -179,10 +189,68 @@
     </pre>
     </code>
 
-    <br>
-
     <h1><u>Attributes</u></h1>
 
+    <h1>Class</h1>
+
+    <p>Identifier the can be used on one or more elements.  Can be used by stylesheets and javascript.</p>
+
+    <code class="codespan">
+    <pre>
+      &lt;h4&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h4&gt;
+      &lt;p&gt;This is some &lt;span class="note&gt;important&lt;/span&gt; text.&lt;p&gt;
+    </pre>
+    </code>
+
+    <h4>My <span class="note">Important</span> Heading</h4>
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <p>You can also attach multiple classes to a single element</p>
+
+    <code>
+    <pre>
+      &lt;p&gt;This is with &lt;span class="note&gt;one&lt;/span&gt; class.&lt;p&gt;
+      &lt;p&gt;This is with &lt;span class="note large highlight&gt;multiple&lt;/span&gt; classes.&lt;p&gt;
+    </pre>
+    </code>
+
+    <p>This is with <span class="note">one</span>class.</p>
+    <p>This is with <span class="note large highlight">multiple</span> classes.</p>
+
+
+    <h1>Id</h1>
+
+    <p>Same as class but must only be used on one HTML element</p>
+
+    &lt;h4 id="myHeader&gt;My header with id attribute&lt;/h4&gt;
+
+    <h4 id="myHeader">My header with id attribute</h4>
+
     <h1>href (hypertext referece)</h1>
+    
+    <p>HTML links are defined with the a tag:</p>
+
+    <code class="codespan">&lt;a&gt; href="https://www.telware.com">This is a link to telware &lt;/a&gt;</code>
+
+    <p><a href="https://www.telware.com">This is a link to telware</a></p>
+
+    <h1>Placeholder</h1>
+
+    <p>
+      The placeholder attribute specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short description of the expected format).\
+      The short hint is displayed in the input field before the user enters a value.
+    </p>
+
+    <code>
+    <pre>
+      Name: &lt;input type="name" id="name" name="name" placeholder="First and Last name"&gt;
+      Email: &lt;type="email" id="email" name="email" placeholder="example@domain.com"&gt;
+    </pre>
+    </code>
+
+    Name: <input type="name" id="name" name="name" placeholder="First and Last name">
+    <br>
+    Email: <input type="email" id="email" name="email" placeholder="example@domain.com">
+
   </body>
 </html>
