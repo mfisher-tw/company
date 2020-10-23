@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .codespan {
+        color: crimson;
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1><u>Macro Structure of an HTML Document</u></h1>
+
+    <code class="codespan">
+    <pre>
+    &lt;!DOCTYPE html:5&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        tags to describe the page itself
+        tags to link CSS file
+        tags to include JavaScript files
+        &lt;/head&gt;
+      &lt;body&gt;
+        Main content goes here.
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+    </code>
+
+    <h1><u>Tags</u></h1>
+
+    <h1>Title Tag</h1>
+
+    <code class="codespan">&lt;title&gt;HTML cheatsheet&lt;/title&gt;</code>
+    <p>Defines the title of the document.  Shown in the browser's title bar or in the page's tab</p>
+
+    <h1>Heading Tags</h1>
+    <code class="codespan">&lt;h1&gt;This is heading 1&lt;/h1&gt;</code>
+    <br>
+    <code class="codespan">&lt;h1&gt;This is heading 2&lt;/h1&gt;</code>
+
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <h1>Paragraph Tags</h1>
+    <code class="codespan">
+      <pre>
+      This is text with
+      no paragraph tag. Notice how adding a 
+      new line in the code doesn't add a new line.
+      </pre>
+    </code>
+
+    This is text with
+    no paragraph tag. Notice how adding a 
+    new line in the code doesn't add a new line.
+
+    <br><br>
+
+    <code class="codespan">&lt;p&gt;This is a paragraph using the paragraph tag.&lt;/p&gt;</code>
+
+    <p>This is a paragraph using the paragraph tag.</p>
+
+    <code class="codespan">&lt;p&gt;This is another paragraph. It is on a new line because the browser recognizes it as a separate paragraph. Semantics matter.&lt;/p&gt;</code>
+
+    <p>This is another paragraph. It is on a new line because the browser recognizes it as a separate paragraph. Semantics matter.</p>
+
+    <h1>HTML Links</h1>
+    <p>HTML links are defined with the a tag:</p>
+
+    <code class="codespan">&lt;a&gt; href="https://www.w3schools.com">This is a link &lt;/a&gt;</code>
+
+    <p><a href="https://www.w3schools.com">This is a link</a></p>
+
+    <h1>Image Tag</h1>
+    <p>HTML images are defined with the img tag:</p>
+    <code class="codespan">&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;</code>
+
+    <br><br>
+
+    <img src="https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/firefox/files/2017/12/firefox-logo-300x310.png" alt="W3Schools.com" height="142">
+
+    <h1>Button Tag</h1>
+    <p>HTML buttons are defined with the button tag:</p>
+
+    <code class="codespan">&lt;button&gt;Click me&lt;/button&gt;</code>
+
+    <br><br>
+
+    <button>Click me</button>
+
+    <h1>List Tag</h1>
+
+    <h3>An Unordered HTML List</h3>
+
+    <code class="codespan">
+    <pre>
+    &lt;ul&gt;
+      &lt;li&gt;Coffee&lt;/li&gt;
+      &lt;li&gt;Tea&lt;/li&gt;
+      &lt;li&gt;Milk&lt;/li&gt;
+    &lt;/ul&gt;
+    </pre>
+    </code>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>  
+
+    <h3>An Ordered HTML List</h3>
+
+    <code class="codespan">
+    <pre>
+    &lt;ol&gt;
+      &lt;li&gt;Coffee&lt;/li&gt;
+      &lt;li&gt;Tea&lt;/li&gt;
+      &lt;li&gt;Milk&lt;/li&gt;
+    &lt;/ol&gt;
+    </pre>
+    </code>
+
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol> 
+
+    <h1>Div (division) Tag</h1>
+
+    <p>The DIV (division) element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can). Most commonly used tag in dev.</p>
+
+
+    <code class="codespan">&lt;div&gt;style="border: 1px solid black">Hello World&lt;/div&gt;</code>
+
+    <br><br>
+
+    <div style="border: 1px solid black">Hello World</div>
+
+    <h1>HTML with inline CSS</h1>
+
+    <code class="codespan">&lt;h1style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;</code>
+
+    <h1 style="color:blue;">A Blue Heading</h1>
+
+    <code class="codespan">&lt;p style="color:red;""&gt;A red paragraph.&lt;/p&gt;</code>
+
+    <p style="color:red;">A red paragraph.</p>
+
+    <h1>HTML with internal stylesheet</h1>
+
+    <code class="codespan">
+    <pre>
+    &lt;head&gt;
+      &lt;style&gt;
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+      &lt;style&gt;
+    &lt;head&gt;
+    </pre>
+    </code>
+
+    <h1>HTML with external stylesheet</h1>
+
+    <code class="codespan">
+    <pre>
+    &lt;head&gt;
+      &lt;linkrel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;
+    </pre>
+    </code>
+
+    <br>
+
+    <h1><u>Attributes</u></h1>
+
+    <h1>href (hypertext referece)</h1>
+
+  </body>
+</html>
