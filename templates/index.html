@@ -1,8 +1,12 @@
 <html>
   <head>
-    <!--Task 1: Use the title tag to create a title element-->
+    <!--Task 1: Use the title tag to create a title element  DONE-->
+    <title>Mike's Awesome Website!!</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-    <!-- Task 2: Use the link tag to link the external stylesheet main.css stylesheet (relative location)-->
+    <!-- Task 2: Use the link tag to link the external stylesheet main.css stylesheet (relative location)  DONE-->
+    <link rel="stylesheet" href="../static/main.css"></link>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
@@ -10,11 +14,14 @@
   </head>
   <body>
 <!-- Navigation Bar -->
-    <!-- New Task: Add the class navbar-inverse to the next element-->
-    <nav id="navigation" class="navbar navbar-fixed-top">
+    <!-- New Task: Add the class navbar-inverse to the next element  DONE-->
+    <nav id="navigation" class="navbar navbar-fixed-top navbar-inverse">
+
       <div class="container">
         <div class="navbar-header">
-          <!-- Task 3: Use the image tag to add your company's logo and give it a class of navbar-brand -->
+          <!-- Task 3: Use the image tag to add your company's logo and give it a class of navbar-brand   DONE-->
+          <img src="C:\Users\mfisher\OneDrive - TelWare Corporation\logos\Avaya_logo.png" alt="Avaya Logo">
+
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarButtons" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -37,8 +44,11 @@
      <!-- 
           Task 4:
           Create to header elements. One with class of banner that has your company's name,
-          and the other with class of motto, with your company's motto.
+          and the other with class of motto, with your company's motto.  DONE
       -->
+      <h1 class="banner">Mike's World</h1>
+      <h2 class="motto">Party time.... Excellent</h2>
+
      <button id="bannerBtn" class="bannerBtn"><a href="#aboutRow" class="learn-more">LEARN MORE</a></button>
    </div>
  </div>
@@ -57,7 +67,13 @@
             <div class="col-md-9">            
               <h2>OUR COMPANY</h2>
               <hr>
-              <!--Task 5: Use the paragraph tag to write a sentence about your company-->
+              <!--Task 5: Use the paragraph tag to write a sentence about your company    DONE-->
+              <p>
+                Party on Nestor...
+
+                Party on Brandon...
+              </p>
+
             </div>
           </div>
           <div class="col-md-3"></div>          
@@ -65,8 +81,8 @@
       </div>
     </div>
 <!--  Services row  -->
-    <!-- Task 6: Give the next div tag an id of servicesRow-->
-    <div class="parallaxSection">
+    <!-- Task 6: Give the next div tag an id of servicesRow    DONE-->
+    <div class="parallaxSection" id="servicesRow">
       <div class="shadowSection">
         <h2>SERVICES</h2>
         <hr/>
@@ -74,23 +90,24 @@
     </div>
     <div id="serviceBlocks" class="row">
       <div class="container">
-        <!-- Task 7: Give the next div tag a class of serviceBlock and col-md-4-->
-        <div>
+        <!-- Task 7: Give the next div tag a class of serviceBlock and col-md-4   DONE-->
+        <div class="serviceBlock col-md-4">
+
           <h1>Cloud</h1>
-          <!-- Task 8: The image tag's attribute is incorrect. Fix the attribute to link the image-->
-          <img url="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Machine-learning-brain-circuit-artificial-intelligence-512.png"/>
+          <!-- Task 8: The image tag's attribute is incorrect. Fix the attribute to link the image   DONE-->
+          <img src="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Machine-learning-brain-circuit-artificial-intelligence-512.png"/>
           <p>We do cloud stuff! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
         </div>
         <div class="serviceBlock col-md-4">
           <h1>Software</h1>
-          <!-- Task 9: The image tag's attribute is incorrect. Fix the attribute to link the image-->
-          <img rel="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Software-disc-programming-coder-512.png"/>
+          <!-- Task 9: The image tag's attribute is incorrect. Fix the attribute to link the image   DONE-->
+          <img src="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Software-disc-programming-coder-512.png"/>
           <p>We do software things! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
         </div>
         <div class="serviceBlock col-md-4">
           <h1>Service</h1>
-          <!-- Task 10: The image tag's attribute is incorrect. Fix the attribute to link the image-->
-          <img href="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Simulation-man-coder-programmer-male-512.png"/>
+          <!-- Task 10: The image tag's attribute is incorrect. Fix the attribute to link the image   DONE-->
+          <img src="https://cdn3.iconfinder.com/data/icons/programming-elements-2/64/Simulation-man-coder-programmer-male-512.png"/>
           <p>We do the needful! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
         </div>
       </div>
@@ -102,6 +119,7 @@
             Create a div with a class of container, then give it a child header 
             with your company's phone number.
         -->
+        <div class="container"><h2>1-704-598-4700</h2></div>
       </div> 
       <div class="container">               
         <div id="contactRow" class="contactForm row">
@@ -109,10 +127,10 @@
           <hr>
           <h3>Enter you contact informaiton and message below.</h3>
           <form name="contactForm" class="form-group" action="#" method="POST">
-            <!-- Task 12: Add a placeholder attribute for the input tag that takes the user's name-->
-            <input id="formName" name="name" class="inputInline form-control" type="text" required/>
-            <!-- Task 13: Add a placeholder attribute for the input tag that takes the user's email-->
-            <input id="formEmail" name="email" class="inputInline form-control" type="email" required/>
+            <!-- Task 12: Add a placeholder attribute for the input tag that takes the user's name   DONE-->
+            <input id="formName" placeholder="Enter your name" name="name" class="inputInline form-control" type="text" required/>
+            <!-- Task 13: Add a placeholder attribute for the input tag that takes the user's email   DONE-->
+            <input id="formEmail" placeholder="Enter your email" name="email" class="inputInline form-control" type="email" required/>
             <textarea id="formMessage" name="message" class="form-control" type="text" placeholder="Message" required></textarea>
             <input name="submit" class="bannerBtn" type="submit" value="SEND MESSAGE"/>
           </form>
@@ -126,12 +144,20 @@
           <p>Industrial Center Cir</p>
           <p>Charlotte, NC 28213</p>
         </div>
+        <div class="contactStack col-md-4">
+          <h4>Operating Hours</h4>
+          <p>None</p>
+        </div>
+        <div class="contactStack col-md-4">
+          <h4>Contact Info</h4>
+          <p>support@mikesworld.com</p>
+        </div>
         <!--
             Task 14: 
             Consider the previous div for the company's address.
             Complete your company's contact info section by adding two more 
             div elements detailing Operating Hours, and Contact Info.  Make sure
-            to keep the same class of contactStack and col-md-4.
+            to keep the same class of contactStack and col-md-4.    DONE
         -->
       </div>
     </div>
@@ -144,9 +170,9 @@
             Hyperlink/hypertext reference the following 3 elements to a facebook, 
             twitter, and linkedin page, respectively.
           -->
-          <a class="social"><img id="facebook"></a>
-          <a class="social"><img id="twitter"></a>
-          <a class="social"><img id="linkedin"></a>
+          <a href="https://www.facebook.com/Flotus" class="social"><img id="facebook"></a>
+          <a href="https://twitter.com/trump" class="social"><img id="twitter"></a>
+          <a href="https://www.linkedin.com/company/telware-corporation" class="social"><img id="linkedin"></a>
         </div>
         <!--
             Task 16: Use the HTML symbol entity for copyright to
